@@ -58,6 +58,12 @@ public class Constants {
 };
 
     //l'emreinte carbone 
-    public static final double normal_carbon_imprint = 0.00009;
-    public static final double dashing_carbon_imprint = 0.0005;
+    // Un déplacement virtuel = équivalent à 0.1 seconde d'utilisation d'un ordinateur
+    // Un ordinateur portable émet ~60g CO₂/heure → 60/36000 * 0.1 ≈ 0.00017g
+    // Mais pour avoir un impact pédagogique, on multiplie par ~100
+
+    public static final double normal_carbon_imprint = 0.017;    // 17 g CO₂
+
+    // Dash = action plus "coûteuse" (calculs plus intensifs, effet visuel)
+    public static final double dashing_carbon_imprint = 0.085;   // 85 g CO₂
 }
